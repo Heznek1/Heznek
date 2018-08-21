@@ -7,7 +7,7 @@ $themecolor-alt: #26c6da;
 $sidebar: #fff;
 $sidebar-alt:#f9f9f9;
 $sidebar-text: #8d97ad;
-$sidebar-icons: #787f91;
+$sidebar-icons: #787f91; 
 $shadow:1px 0px 20px rgba(0, 0, 0, 0.08);
 $lft:left;
 $rgt:right;
@@ -88,7 +88,7 @@ $theme-colors: (
   light:                          $gray-100,
   cyan:                           $cyan,
   dark:                           $gray-800,
-  purple:                         $purple
+  purple:                         $purple    
 );
 
 // Options
@@ -119,7 +119,7 @@ $grid-gutter-width:         20px !default;
 // Font, line-height, and color for body text, headings, and more.
 
 $font-size-base:              0.875rem;
-$font-family-sans-serif:     'Poppins', sans-serif !default;
+$font-family-sans-serif:     'Poppins', sans-serif !default; 
 
 
 $font-weight-light:           300 !default;

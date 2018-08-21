@@ -4,7 +4,7 @@ Author: Wrappixel
 
 File: scss
 */
-@import '../variable';
+@import '../variable'; 
 
 /*******************
 chat application Page
@@ -12,7 +12,7 @@ chat application Page
 
 .chat-main-box {
     position: relative;
-
+    
     overflow: hidden;
     .chat-left-aside {
         position: relative;
@@ -94,7 +94,7 @@ chat application Page
                 height: 80px;
                 padding-right: 180px;
                 &:focus {
-                    border-color: $border-color;
+                    border-color: $border-color; 
                 }
             }
             .custom-send {

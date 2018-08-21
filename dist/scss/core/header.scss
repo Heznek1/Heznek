@@ -18,7 +18,7 @@
         }
         .navbar-header {
             background: rgba(0,0,0,0.05);
-            line-height: 65px;
+            line-height: 65px; 
             padding-left: 10px;
             min-width: 70px;
             .navbar-brand {
@@ -34,7 +34,7 @@
                 }
             }
         }
-
+        
         .profile-pic {
             white-space: nowrap;
             img{
@@ -59,9 +59,9 @@
             color: $white;
             padding: 0 10px;
         }
-
+        
     }
-
+    
     .dropdown-menu {
         box-shadow: $shadow;
         -webkit-box-shadow: $shadow;
@@ -71,7 +71,7 @@
             padding: 7px 1.5rem;
         }
     }
-
+    
 }
 
 /*******************
@@ -161,7 +161,7 @@ Notify
 .app-search {
     line-height: 60px;
     .form-control{
-
+        
         border-radius: 60px;
         border-color: transparent;
         transition: 0.2s ease-in;

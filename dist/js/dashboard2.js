@@ -142,11 +142,11 @@ $(function () {
         setTimeout(update, updateInterval);
     }
     update();
-
+    
     $("body").trigger("resize");
     //This is for the perfect scroll
-
-    $('.slimscrollcountry').perfectScrollbar();
+    
+    $('.slimscrollcountry').perfectScrollbar(); 
 });
 //sparkline charts
 var sparklineLogin = function () {

@@ -4,7 +4,7 @@ Author: Wrappixel
 
 File: scss
 */
-@import '../variable';
+@import '../variable'; 
 
 
 /*******************
@@ -24,10 +24,10 @@ Email inbox Page
                 border-left:3px solid $themecolor;
             }
             &:hover{
-
+               
             }
         }
-
+         
     }
 }
 .inbox-center{
@@ -39,7 +39,7 @@ Email inbox Page
         white-space: nowrap;
     }
     .max-texts{
-
+       
     }
   a{
     color:$body-color;

@@ -3,7 +3,7 @@
 /*******************
 Bootstrap Switch
 ******************/
-.bootstrap-switch,
+.bootstrap-switch, 
 .bootstrap-switch .bootstrap-switch-container {
     border-radius: 2px;
 }
@@ -51,14 +51,14 @@ Bootstrap Switch
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-default,
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-default {
     color: $gray-800;
-    background: $gray-100;
+    background: $gray-100;    
 }
 .onoffswitch {
     position: relative; width: 90px;
     -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
-
+    
 }
-.onoffswitch-checkbox {
+.onoffswitch-checkbox { 
     display: none;
 }
 .onoffswitch-label {
@@ -71,7 +71,7 @@ Bootstrap Switch
 }
 .onoffswitch-inner:before, .onoffswitch-inner:after {
     display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
-    font-size: 14px; color: white;
+    font-size: 14px; color: white; 
     box-sizing: border-box;
 }
 .onoffswitch-inner:before {
@@ -91,12 +91,12 @@ Bootstrap Switch
     position: absolute; top: 0; bottom: 0;
     right: 56px;
     border: 2px solid $green; border-radius: 20px;
-    transition: all 0.3s ease-in 0s;
+    transition: all 0.3s ease-in 0s; 
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
     margin-left: 0;
 }
 .onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
-    right: 0px;
+    right: 0px; 
 }
 

@@ -7,44 +7,44 @@ File: scss
 */
 
 
-/*==============================================================
- For Desktop & above all (1650px)
+/*============================================================== 
+ For Desktop & above all (1650px) 
  ============================================================== */
 
 @media(min-width:1650px) {
-
+    
 }
 @media(max-width:1600px) {
-
+    
 }
-/*==============================================================
- For Laptop & above all (1370px)
+/*============================================================== 
+ For Laptop & above all (1370px) 
  ============================================================== */
 
 @media(max-width:1370px) {
-
+    
 }
+ 
 
 
-
-/*-- ==============================================================
- Small Desktop & above all (1024px)
+/*-- ============================================================== 
+ Small Desktop & above all (1024px) 
  ============================================================== */
 
 @media(min-width:1024px) {
     .page-wrapper, .footer {
         margin-left: 220px;
     }
-
+    
 }
 
 @media(max-width:1023px) {
     .inbox-center a {
         width: 200px;
     }
-
+    
     .d-flex{
-        display:block!important;
+        display:block!important; 
         &.no-block{
             display:flex!important;
         }
@@ -53,8 +53,8 @@ File: scss
 
 
 
-/*-- ==============================================================
- Ipad & above all(768px)
+/*-- ============================================================== 
+ Ipad & above all(768px) 
  ============================================================== */
 
 @media(min-width:768px) {
@@ -65,20 +65,20 @@ File: scss
             padding-top: 0px;
         }
     }
-
+    
     .material-icon-list-demo .icons div {
         width: 33%;
         padding: 15px;
         display: inline-block;
         line-height: 40px;
     }
-
+    
 }
 
 
 
-/*-- ==============================================================
- Phone and below ipad(767px)
+/*-- ============================================================== 
+ Phone and below ipad(767px) 
  ============================================================== */
 
 @media(max-width:767px) {
@@ -108,7 +108,7 @@ File: scss
                         margin-top: 0px;
                     }
                 }
-
+                
                 .dropdown-menu {
                     position: absolute;
                 }
@@ -121,7 +121,7 @@ File: scss
             overflow: auto;
         }
     }
-
+    
     .comment-text {
         .comment-footer {
             .action-icons {
@@ -228,7 +228,7 @@ File: scss
     .chat-list li .chat-content {
         width: calc(100% - 80px);
     }
-
+    
     /*Calendar*/
     .fc-toolbar .fc-left, .fc-toolbar .fc-right, .fc-toolbar .fc-center{
         float:none;

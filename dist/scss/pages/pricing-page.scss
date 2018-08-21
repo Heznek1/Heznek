@@ -4,7 +4,7 @@ Author: Wrappixel
 
 File: scss
 */
-@import '../variable';
+@import '../variable'; 
 
 /*******************
 Pricing Page
@@ -54,7 +54,7 @@ Pricing Page
     border-top:1px solid rgba(120, 130, 140, 0.13);
   }
 }
-.pricing-plan  {
+.pricing-plan  { 
   padding:0 15px;
   .no-padding{ padding:0px;}
 }

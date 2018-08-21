@@ -149,7 +149,7 @@ Form summernote
 }
 
 
-/*==============================================================
+/*============================================================== 
 Form addons page
 ============================================================== */
 
@@ -207,17 +207,17 @@ Form addons page
         .select2-selection__choice{
             background: $themecolor;
             color:$white;
-            border-color:$themecolor;
+            border-color:$themecolor;    
         }
     }
-}
+}    
 
 .input-form .btn {
   padding: 8px 12px;
 }
 
 
-/*==============================================================
+/*============================================================== 
 Form Material page
  ============================================================== */
 
@@ -270,7 +270,7 @@ Form Material page
 
 
 /*******************
-Form validation error
+Form validation error 
 ******************/
 
 .error .help-block {
@@ -279,7 +279,7 @@ Form validation error
 
 
 /*******************
-File Upload
+File Upload 
 ******************/
 
 .fileupload {
@@ -298,7 +298,7 @@ File Upload
     }
 }
 
-.scale-up{
+.scale-up{ 
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -webkit-transform: scale(0);
@@ -306,7 +306,7 @@ File Upload
     display:inline-block;
     transform-origin: right 0px;
 }
-.scale-up-left{
+.scale-up-left{ 
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     -webkit-transform: scale(0);
@@ -388,7 +388,7 @@ File Upload
 .has-success .input-group-addon {
   color: $success;
   border-color: $success;
-
+  
 }
 
 .has-success .form-control-success {
@@ -410,7 +410,7 @@ File Upload
 .has-warning .input-group-addon {
   color: $warning;
   border-color: $warning;
-
+  
 }
 
 .has-warning .form-control-warning {
@@ -432,7 +432,7 @@ File Upload
 .has-danger .input-group-addon {
   color: $danger;
   border-color: $danger;
-
+  
 }
 
 .has-danger .form-control-danger {

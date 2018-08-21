@@ -52,7 +52,7 @@ $(function () {
                 behaveLikeLine: true,
                 gridLineColor: '#e0e0e0',
                 hideHover: 'auto'
-
+        
     });
 Morris.Area({
         element: 'morris-area-chart2',
@@ -60,38 +60,38 @@ Morris.Area({
             period: '2010',
             SiteA: 0,
             SiteB: 0,
-
+            
         }, {
             period: '2011',
             SiteA: 130,
             SiteB: 100,
-
+            
         }, {
             period: '2012',
             SiteA: 80,
             SiteB: 60,
-
+            
         }, {
             period: '2013',
             SiteA: 70,
             SiteB: 200,
-
+            
         }, {
             period: '2014',
             SiteA: 180,
             SiteB: 150,
-
+            
         }, {
             period: '2015',
             SiteA: 105,
             SiteB: 90,
-
+            
         },
          {
             period: '2016',
             SiteA: 250,
             SiteB: 150,
-
+           
         }],
         xkey: 'period',
         ykeys: ['SiteA', 'SiteB'],
@@ -106,10 +106,10 @@ Morris.Area({
         hideHover: 'auto',
         lineColors: ['#b4becb', '#01c0c8'],
         resize: true
-
+        
     });
 });
-var sparklineLogin = function() {
+var sparklineLogin = function() { 
         $('#sparklinedash').sparkline([ 0, 5, 6, 10, 9, 12, 4, 9, 12, 10, 9], {
             type: 'bar',
             height: '30',
@@ -156,10 +156,10 @@ var sparklineLogin = function() {
             barSpacing: '10',
             barColor: '#25a6f7'
         });
-
+        
    }
     var sparkResize;
-
+ 
         $(window).resize(function(e) {
             clearTimeout(sparkResize);
             sparkResize = setTimeout(sparklineLogin, 500);

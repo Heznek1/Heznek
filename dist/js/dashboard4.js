@@ -48,7 +48,7 @@ $(function () {
         , gridLineColor: '#e0e0e0'
         , hideHover: 'auto'
     });
-
+    
     var sparklineLogin = function () {
         $('#sales1').sparkline([20, 40, 30], {
             type: 'pie'

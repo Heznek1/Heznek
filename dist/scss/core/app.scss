@@ -1,10 +1,10 @@
 // App
 
-/*==============================================================
- For all pages
+/*============================================================== 
+ For all pages 
  ============================================================== */
 
-#main-wrapper {
+#main-wrapper { 
     width: 100%;
     overflow: hidden;
 }
@@ -12,7 +12,7 @@
 .page-wrapper {
     background: $body-bg;
     position: relative;
-
+    
 }
 
 .container-fluid {
@@ -37,7 +37,7 @@
         background: transparent;
         font-size: 12px;
         li {
-
+            
             a{
                 color:$body-color;
             }
@@ -64,7 +64,7 @@
     color: $body-color;
     left: 0px;
     padding: 17px 15px;
-
+    
     right: 0;
     border-top: 1px solid $border-color;
     background: $white;

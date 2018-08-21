@@ -12,15 +12,15 @@ Main sidebar
     z-index: 20;
     padding-top: 70px;
     background: $sidebar;
-    box-shadow: $shadow;
+    box-shadow: $shadow; 
 }
-
+ 
 
 /*******************
 use profile section
 ******************/
 .user-pro{
-    margin-top: 20px;
+    margin-top: 20px; 
     a{
         img{
             width: 30px;
@@ -50,13 +50,13 @@ sidebar navigation
 }
 
 .sidebar-nav {
-
+    
     padding: 15px 0 0 0px;
     ul {
         margin: 0px;
         padding: 0px;
         li {
-            list-style: none;
+            list-style: none; 
             a {
                 color: $sidebar-text;
                 padding: 10px 35px 10px 15px;

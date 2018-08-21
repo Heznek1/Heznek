@@ -4,7 +4,7 @@ Author: Wrappixel
 
 File: scss
 */
-@import '../variable';
+@import '../variable'; 
 
 
 /*******************
@@ -15,13 +15,13 @@ ribbons page
 .ribbon-wrapper-bottom,
 .ribbon-wrapper-right-bottom {
     position: relative;
-
+    
     padding: 50px 15px 15px 15px;
 }
 .ribbon-vwrapper{
     padding: 15px 15px 15px 50px;
     position: relative;
-
+   
 }
 .ribbon-overflow {
     overflow: hidden;
@@ -29,7 +29,7 @@ ribbons page
 
 .ribbon-vwrapper-reverse {
     padding: 15px 50px 15px 15px;
-
+    
 }
 
 .ribbon-wrapper-bottom {
@@ -347,7 +347,7 @@ ribbons page
 
 .ribbon-danger {
     background: $red;
-}
+} 
 
 .ribbon-bookmark.ribbon-danger:before {
     border-color: $red;

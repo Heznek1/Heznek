@@ -4,7 +4,7 @@ Author: Wrappixel
 
 File: scss
 */
-@import '../variable';
+@import '../variable';  
 
 /*******************
 Table- Footable
@@ -47,7 +47,7 @@ Table- Footable
         box-shadow: none;
         transition-duration: 0.3s;
     }
-}
+}    
 .footable .pagination{
     li{
         a {
@@ -58,7 +58,7 @@ Table- Footable
             line-height: 1.25;
             color: #0275d8;
             background-color: $white;
-            border: 1px solid #ddd;
+            border: 1px solid #ddd;    
         }
         &.active a{
             z-index: 2;
@@ -85,13 +85,13 @@ Table- Footable
     }
 }
 
-#demo-foo-accordion{
+#demo-foo-accordion{  
     .open>.dropdown-menu {
         display: block;
     }
 }
 
-#demo-foo-accordion2{
+#demo-foo-accordion2{  
     .open>.dropdown-menu {
         display: block;
     }

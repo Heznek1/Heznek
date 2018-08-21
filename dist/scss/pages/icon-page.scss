@@ -4,7 +4,7 @@ Author: Wrappixel
 
 File: scss
 */
-@import '../variable';
+@import '../variable'; 
 
 /*******************
 Icon list fontawesom
@@ -35,8 +35,8 @@ Icon list fontawesom
     transition: all 0.2s;
     transition: font-size .2s;
     vertical-align: middle;
-
-
+    
+    
     transition: all 0.3s ease 0s;
   }
   .col-md-4, .col-3 {
@@ -49,7 +49,7 @@ Icon list fontawesom
 }
 .icon-list-demo .div:hover i {
       font-size:2em;
-
+      
     }
 /*******************
 Icon list material icon

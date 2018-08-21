@@ -63,7 +63,7 @@
     }
 }
 .btn-secondary{
-  border-color: $btn-secondary-border;
+  border-color: $btn-secondary-border;  
 }
 .btn-outline-secondary{
     color: $body-color;
@@ -72,7 +72,7 @@
     &:hover{
         border-color: $gray-400;
     }
-}
+}   
 
 .btn-facebook {
     color: $white;

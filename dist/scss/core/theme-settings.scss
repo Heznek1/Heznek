@@ -14,7 +14,7 @@ Fixed -sidebar
         .navbar-collapse, .footer{
             margin-left: 70px;
         }
-
+        
     }
 }
 @media(max-width:767px) {
@@ -54,13 +54,13 @@ Fixed -Header
 /*******************
 Boxed
 ******************/
-.boxed #main-wrapper {
+.boxed #main-wrapper {  
     width: 100%;
     max-width: 1300px;
     margin: 0 auto;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
     .sidebar-footer {
-        position: absolute;
+        position: absolute; 
     }
     .topbar{
         max-width: 1300px;
@@ -101,7 +101,7 @@ Mini sidebar
     .left-sidebar{
             width: 70px;
      }
-
+    
     .scroll-sidebar {
             padding-bottom: 0px;
             position: absolute;
@@ -116,7 +116,7 @@ Mini sidebar
             li{
                 position: relative;
             }
-
+            
             > li > ul {
                 position: absolute;
                 left: 70px;
@@ -137,9 +137,9 @@ Mini sidebar
                 padding: 15px 15px 15px 25px;
             }
             .user-pro > a{
-
-                  padding-left:18px;
-
+                 
+                  padding-left:18px;   
+                
             }
             > li:hover > a {
                 width: 290px;
