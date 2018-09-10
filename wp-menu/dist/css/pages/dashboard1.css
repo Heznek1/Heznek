@@ -30,7 +30,7 @@
   width: 90%; }
 
 .dash-timeline > li.timeline-inverted > .timeline-panel {
-  float: left;
+  float: right;
   margin-left: 75px; }
 
 .dash-timeline:before {
