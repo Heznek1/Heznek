@@ -1,0 +1,177 @@
+
+סדר יצירת הטבלאות:
+statusTbl.
+userTypeTbl
+scholarship
+eventTbl
+bank
+message
+serviceTbl
+userTbl
+participantInEvent
+contactStudentCandidate
+studentScholarship
+
+
+
+
+CREATE table userTbl(
+    id char(9) primary key check(id like replicate('[0-9]',9)),
+    password varchar(10),
+    firstName varchar(50) not null,
+    lastName varchar(50) not null,
+    dateOfBirth date,
+    status int not null,
+    foreign key(status) references statusTbl(numOfStatus),
+    yearsInTheProgram int,
+    requestStatus char(1) CHECK(requestStatus in('Y','N','?',NULL)) ,
+    userType int not null,
+    foreign key(userType) REFERENCES userTypeTbl(numOfType),
+    gender char(1) check(gender in('M','F')),
+    phone varchar(10) check(phone like replicate('[0-9]',10)),
+    email varchar(10000) check (email like '%_@__%.__%'),
+    address text,
+    numOfSiblings int,
+    academicParents int(1) check(academicParents in(0,1,2)),
+    school text,
+    yearFinishSchool int,
+    typeOfService int(1) not null,
+    foreign key(typeOfService) REFERENCES serviceTbl(sn),
+    academicInstitution text,
+    studyField text,
+    startYear int,
+    excpectedCompletionYear int check(startYear<=excpectedCompletionYear),
+    learningDisabilities varchar(3) check(learningDisabilities in('Yes','No')),
+    psychometricGrade int,
+    anotherScholarship varchar(3) check(anotherScholarship in('Yes','No')),
+    educationFunding text,
+    difficulties text,
+    bankName int,
+    foreign key(bankName) REFERENCES bank(sn),
+    numOfBank int,
+    numAccount int,
+    files text,
+    profilePicture text,
+CONSTRAINT check_bank1_nullness CHECK ((bankName is null and numOfBank is null) or (bankName is not null and numOfBank is not null)),
+
+CONSTRAINT check_bank2_nullness CHECK ((numOfBank is null and numAccount is null) or (numOfBank is not null and numAccount is not null))
+    )
+
+
+
+
+
+
+ create table statusTbl(
+     numOfStatus int AUTO_INCREMENT primary key,
+     primaryStatusName varchar(100) not null,
+     secondaryStatusName varchar(100)
+     )
+
+
+
+
+
+   create table userTypeTbl(
+       numOfType int AUTO_INCREMENT primary key,
+       userType varchar(100) not null
+       )
+
+
+
+create table scholarship(
+    sn int AUTO_INCREMENT primary key,
+    scholarshipName varchar(100) not null,
+    budgetScholarship int,
+    admission text,
+    status char(1) not null check(status in ('Active','Not Active'))
+    )
+
+
+
+create table studentScholarship(
+    id char(9) not null,
+    foreign key(id) REFERENCES userTbl(id),
+    sn int not null,
+    FOREIGN KEY(sn) REFERENCES scholarship(sn),
+    amountOfGivanScholarship int,
+    numOfDeposits int,
+    currentYear int,
+    wasGivenInPast char(1) not null,
+    numOfVolunteerHours int,
+    numOfHoursDone int,
+    numOfHoursLeft int as (numOfVolunteerHours-numOfHoursDone),
+    amountDeposited int,
+    amountLeftToDeposit int as (amountOfGivenScholarship-amountDeposited),
+    remarks text,
+    primary key(id,sn)
+    )            
+    
+
+
+
+create table contactStudentCandidate(
+    idStudent char(9),
+    FOREIGN KEY(idStudent) REFERENCES userTbl(id),
+    idCandidate char(9),
+    FOREIGN KEY(idCandidate) REFERENCES userTbl(id),
+    dateOfCall DATE,
+    updating text,
+    foreign key(idStudent, idCandidate)
+    )
+
+
+
+
+
+
+create table eventTbl(
+    sn int AUTO_INCREMENT PRIMARY KEY,
+    nameEvent varchar(300) not null,
+    subjectEvent varchar(300),
+    eventDate date,
+    eventHour time,
+    eventLocation varchar(500),
+    typeOfParticipants varchar(100) not null check(typeOfParticipants IN('student','candidate','graduate','everyone')),
+	numParticipantsExpected int,
+    numOfActualParticipants int
+)
+
+
+
+
+Create table bank
+(
+Sn int AUTO_INCREMENT primary key,
+Name varchar(200) not null
+)
+
+
+CREATE table participantInEvent
+(
+    sn int,
+    FOREIGN KEY(sn) REFERENCES eventTbl(sn),
+    id char(9),
+    FOREIGN KEY(id) REFERENCES userTbl(id),
+    PRIMARY KEY(sn,id)
+)
+
+
+
+create table messages(
+    sn int AUTO_INCREMENT PRIMARY KEY,
+    fromUser varchar(100),
+    toUser varchar(100),
+    subject text,
+    content text,
+    hour time,
+    dateOfMessage date 
+)
+
+
+create table serviceTbl ( 
+sn int AUTO_INCREMENT primary key,
+type varchar(100) check(type in ('military','national service',null)),
+longOfService varchar(100) check(longOfService in('full','partial',null))
+ )
+
